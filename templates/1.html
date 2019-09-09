@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>heading 1</h1>
+    <!-- HERE {{ BOOKS }} MEANS IT ONLY GIVE THE QUERY SET -->
+    <!-- <h1>Dynamic data {{ books }}</h1> -->
+
+    <!-- FOR DISPLAY DATA W/0 QUERY SET WE WILL USE THIS  -->
+    <!-- <h1>for loop data book id : {{ book.id }} with the title  {{ book.title }}</h1> -->
+    {% for book in books %}
+        {% if book.is_published %}
+            <h1>if-else data book id : {{ book.id }} with the title  {{ book.title }}</h1>
+        {% endif %}
+    
+    {% endfor %}
+
+   
+</body>
+</html>
